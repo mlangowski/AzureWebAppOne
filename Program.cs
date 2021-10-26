@@ -18,6 +18,11 @@ namespace AzureWebAppOne
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureLogging(logConfig=> 
+                {
+                    logConfig.ClearProviders();
+                    logConfig.AddConsole();
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
