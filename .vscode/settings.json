@@ -1,0 +1,6 @@
+{
+    "deployToAzure.UseAzurePipelinesForGithub": true,
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\netcoreapp3.1\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/9ea30e56-c976-445a-8ec9-3c013fe22964/resourceGroups/ResourceGroup1/providers/Microsoft.Web/sites/LangoAzureWebApp1"
+}
